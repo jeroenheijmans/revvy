@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Revvy: Games by u:jeroenheijmans</title>
+    <link href="https://unpkg.com/tailwindcss@1.1.1/dist/tailwind.min.css" rel="stylesheet">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTXdYP5PAAACzElEQVRYR8WVPUxTURiGGRkcHBgcGBwYHF3aYnu5p/THUqlaSFsMoJIOxMHEPwIYFYhiYlxqlOjAYFyUxEUT4uCii65MLrqaGEVjbW9/+JHjexpKbi9vte0ttcmTe+97zrnfe77z9bttUsr/ChVbCRUZXq/3ANPtQkUGDKSYbhcqMrzC+xYmDrMxO1CRcVwE3vUL/2s2ZgcqMmDgOTIgQRcbbxQqMo4K3wIysHVM+JfYeKNQkYGdzz3wjMg+4cs3MwtUZCDouduehLHoPrOBTDxhcxqBigwYGJvRYpkfzqsSx1HEc1P6AhUZCOgd74n8lI5Zec8zXMRRPGTz6oWKDMTvPq2H08rAdhYKzcgCFRkIdvCkCGaVgXIWUAt32Nx6oCIDBvYHRe962cA357QMCZ+hdDa/VqhYDQQrBS9zS0vkYWqeza0VKlYDO06rnZcNfHZOlmrBL3ovw1w7W/MvqFiNsPCvfnFOVWThk+uKnNQGDGUOZqbrPRIqMvDiSEIPZdccNyoMmI1MaYMFHEnpWGo1QkUr6mVq9x9cl2hwM+pYVG2oAq3FCBWt4AP0Et+BIgtYDWVkXksUYCSH9SkYoT1jl2AFC2NDeihnTn3WcU3OavEcxiQ+08agHsyoLnmxJ5q+qcWzC56R9cfus3L5yLhccidlUu/fRKFuqO5pNVIRzAomd2AHv8ypf999XqqGhCO5j/F20Am6gPpFwBiYAHMREXh6QgRegBUY/QgDX6Gvgp2M0MBl0OlePXKPrqnAecd1eddzqrD9EjQEvqZW8IoOdaWDCvylhkb1sLHpmJErrgsyKoIGdr2IhfvY/EahokoPdppRqU95hlVFf4fWx+bahYoR4X8zoQ38juuhDHb9DMFt9fu/sUtAtSYRULXYLK5R63izqXhAwE4YUBW+jPtSkew1FQ8IqtIdM2t7zc4NAh9q1a7NULF1yLY/wskKLRTy+EQAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" /> 
+    <style>
+      th, 
+      td:nth-child(1),
+      td:nth-child(2),
+      td:nth-child(4),
+      td:nth-child(5) {
+        white-space: nowrap;
+      }
+      td, th {
+        border: 1px solid #EDF2F7;
+        padding: 2px 4px;
+        text-align: left;
+      }
+      tr:hover td {
+        background: #EBF4FF;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="p-3 mb-3 border-b border-blue-300 bg-blue-100">
+      <a href="#" class="text-blue-900 hover:text-blue-600 text-xl font-bold uppercase font-serif border border-gray-500 bg-gray-200 rounded p-1">🖊</a>
+      ➣
+      <a href="#" class="text-blue-900 hover:text-blue-600">user:jeroenheijmans</a>
+      ➣
+      <a href="#" class="text-blue-900 hover:text-blue-600">Games</a>
+    </nav>
+    <h1 class="m-3 text-2xl text-blue-800 font-bold">Games</h1>
+    <div class="mx-3">
+      <a href="#" class="py-1 px-2 border bg-blue-100 hover:bg-blue-200">▦ Grid view</a>
+      <a href="#" class="py-1 px-2 border bg-blue-200">▢ Card view</a>
+      <span class="mx-3">|</span>
+      <label>Sorted by:</label>
+      <select class="p-1 border text-sm">
+        <option>Rating (descending)</option>
+        <option>Rating (ascending)</option>
+        <option>Created (descending)</option>
+        <option>Created (ascending)</option>
+        <option>Updated (descending)</option>
+        <option>Updated (ascending)</option>
+        <option>Title (ascending)</option>
+        <option>Title (descending)</option>
+      </select>
+    </div>
+    <div id="data" class="flex flex-row flex-wrap">
+      <!-- generated -->
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const data = [
+            { rating: 100, title: 'Commander Keen', description: 'Rating for all episodes, but my preference would be in this order: 3, 2, 6, 1, 5, 4. (Keen Dreams sucked big time!)', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 100, title: 'Warcraft 2', description: 'So. Many. Hours. Against the CPU. Against my dad. Against my friends. Plain fantastic game!', created: '2019-08-10', updated: '2018-06-22' },
+            { rating: 100, title: 'Golden Eye 64', description: 'Four-player-split-screen-james-bond-themed-3d-shooter. What more is there to add!?', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 100, title: 'World of Warcraft', description: 'The sheer number of hours of gaming pleasure with this title makes it a must for the top 10. Favorite expansion would be Wrath of the Lich King, mostly because that’s when most of my real life friends also played the game (I’ve played Burning Legion through Cataclysm).', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 100, title: 'Zelda: Ocarina of Time', description: 'There’s something intrinsically great about this game that requires me to place it in a top 10.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 100, title: 'Dota 2', description: 'With over 1700 hours played to date it’s hard to deny that I’ve enjoyed this game. A lot.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 100, title: 'Warcraft 3', description: 'Great gameplay, great story!', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 90, title: 'Prince of Persia (the original)', description: 'I still have dreams and nightmares about this game.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 90, title: 'Impossible Mission', description: 'The first Amiga title on this list. Spending weekends at my uncle’s place just playing these games: amazing!', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 90, title: 'Neverwinter Nights 1', description: 'A very good game, but it’s on this list because I had some awesome full-weekend complete co-op playthroughs that were fantastic.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 90, title: 'Menace', description: 'R-Type clone I absolutely loved.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'Wolfenstein 3D', description: 'Didn’t even play this game that much, if it weren’t for playing the home brew levels my friends made for each other.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'Hollow Knight', description: 'Completely addictive, somewhat challenging, and absolutely beautiful. So much fun!', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'Heroes of the Storm', description: 'Quit the game multiple times because it was too addictive, so it deserves its spot.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'GTA: San Andreas', description: 'Really got me into the sandbox genre.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'Klax', description: 'Tetris on steroids!', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 80, title: 'Super Mario Galaxy', description: 'The gameplay of this game was just phenomenal.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 70, title: 'Whacky Wheels', description: 'Yes, I enjoyed this more than Mario Kart. Bite me!', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 70, title: 'Tetris', description: 'Dragged me through some long trips that would’ve otherwise been quite tedious.', created: '2019-08-10', updated: '2019-08-11' },
+            { rating: 70, title: 'Duke Nukem 3D', description: 'Hail to the king, baby! First co-op 3D shooter with amazing level design.', created: '2019-08-10', updated: '2019-08-11' },
+          ];
+  
+          const tbody = document.getElementById('data');
+  
+          data.forEach(d => {
+            tbody.innerHTML += `
+            <div class="w-1/3">
+            <div class="p-3">
+              <div class="border bg-gray-100 p-3 h-full">
+                <h3 class="text-2xl font-bold">
+                  ${d.title}
+                  <a href="#"><span class="ml-3 py-1 px-2 align-text-bottom inline-block bg-orange-100 hover:bg-orange-200 border border-orange-200 text-xs">Game</span></a>
+                </h3>
+                <p class="my-2">
+                  <span class="opacity-100">${'⭐'.repeat(d.rating / 10)}</span><span class="opacity-25">${'⭐'.repeat((100 - d.rating) / 10)}</span> (${d.rating}/100)
+                </p>
+                <p class="my-2">
+                  <a class="text-blue-700 hover:text-blue-500 underline" href="https://example.org" target="_blank" rel="nofollow">https://example.org/${d.title.replace(' ', '-')}</a>
+                </p>
+                <p class="my-2 mb-4 text-xl">${d.description}</p>
+                <p><a href="#" class="text-blue-700 hover:text-blue-500 underline">Read more...</a></p>
+                <p class="mt-3 text-gray-400 text-xs">
+                  Created ${d.created} | Last updated ${d.updated}
+                </p>
+              </div>
+            </div>
+            </div>`;
+          });
+        });
+      </script>
+  </body>
+</html>

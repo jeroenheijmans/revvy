@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Games</title>
+    <title>Revvy: Games by u:jeroenheijmans</title>
     <link href="https://unpkg.com/tailwindcss@1.1.1/dist/tailwind.min.css" rel="stylesheet">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuMTXdYP5PAAACzElEQVRYR8WVPUxTURiGGRkcHBgcGBwYHF3aYnu5p/THUqlaSFsMoJIOxMHEPwIYFYhiYlxqlOjAYFyUxEUT4uCii65MLrqaGEVjbW9/+JHjexpKbi9vte0ttcmTe+97zrnfe77z9bttUsr/ChVbCRUZXq/3ANPtQkUGDKSYbhcqMrzC+xYmDrMxO1CRcVwE3vUL/2s2ZgcqMmDgOTIgQRcbbxQqMo4K3wIysHVM+JfYeKNQkYGdzz3wjMg+4cs3MwtUZCDouduehLHoPrOBTDxhcxqBigwYGJvRYpkfzqsSx1HEc1P6AhUZCOgd74n8lI5Zec8zXMRRPGTz6oWKDMTvPq2H08rAdhYKzcgCFRkIdvCkCGaVgXIWUAt32Nx6oCIDBvYHRe962cA357QMCZ+hdDa/VqhYDQQrBS9zS0vkYWqeza0VKlYDO06rnZcNfHZOlmrBL3ovw1w7W/MvqFiNsPCvfnFOVWThk+uKnNQGDGUOZqbrPRIqMvDiSEIPZdccNyoMmI1MaYMFHEnpWGo1QkUr6mVq9x9cl2hwM+pYVG2oAq3FCBWt4AP0Et+BIgtYDWVkXksUYCSH9SkYoT1jl2AFC2NDeihnTn3WcU3OavEcxiQ+08agHsyoLnmxJ5q+qcWzC56R9cfus3L5yLhccidlUu/fRKFuqO5pNVIRzAomd2AHv8ypf999XqqGhCO5j/F20Am6gPpFwBiYAHMREXh6QgRegBUY/QgDX6Gvgp2M0MBl0OlePXKPrqnAecd1eddzqrD9EjQEvqZW8IoOdaWDCvylhkb1sLHpmJErrgsyKoIGdr2IhfvY/EahokoPdppRqU95hlVFf4fWx+bahYoR4X8zoQ38juuhDHb9DMFt9fu/sUtAtSYRULXYLK5R63izqXhAwE4YUBW+jPtSkew1FQ8IqtIdM2t7zc4NAh9q1a7NULF1yLY/wskKLRTy+EQAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" /> 
     <style>
       th, 
       td:nth-child(1),
@@ -34,42 +35,73 @@
     <div class="m-3">
       <a href="#" class="py-1 px-2 border bg-blue-200">▦ Grid view</a>
       <a href="#" class="py-1 px-2 border bg-blue-100 hover:bg-blue-200">▢ Card view</a>
+      <span class="mx-3">|</span>
+      <label>Sorted by:</label>
+      <select class="p-1 border text-sm">
+        <option>Rating (descending)</option>
+        <option>Rating (ascending)</option>
+        <option>Created (descending)</option>
+        <option>Created (ascending)</option>
+        <option>Updated (descending)</option>
+        <option>Updated (ascending)</option>
+        <option>Title (ascending)</option>
+        <option>Title (descending)</option>
+      </select>
     </div>
     <table class="m-3">
       <thead>
         <tr>
-          <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Rating ↓</a></th>
+          <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Rating</a></th>
           <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Title</a></th>
           <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Tagline</a></th>
           <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Created</a></th>
           <th class="bg-gray-200"><a href="#" class="hover:text-blue-800">Updated</a></th>
         </tr>
       </thead>
-      <tbody>
-        <tr><td>100/100</td><td>Commander Keen</td><td>Rating for all episodes, but my preference would be in this order: 3, 2, 6, 1, 5, 4. (Keen Dreams sucked big time!)</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>100/100</td><td>Warcraft 2</td><td>So. Many. Hours. Against the CPU. Against my dad. Against my friends. Plain fantastic game!</td><td>2019-08-10</td><td>2018-06-22</td></tr>
-        <tr><td>100/100</td><td>Golden Eye 64</td><td>Four-player-split-screen-james-bond-themed-3d-shooter. What more is there to add!?</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>100/100</td><td>World of Warcraft</td><td>The sheer number of hours of gaming pleasure with this title makes it a must for the top 10. Favorite expansion would be Wrath of the Lich King, mostly because that’s when most of my real life friends also played the game (I’ve played Burning Legion through Cataclysm).</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>100/100</td><td>Zelda: Ocarina of Time</td><td>There’s something intrinsically great about this game that requires me to place it in a top 10.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>100/100</td><td>Dota 2</td><td>With over 1700 hours played to date it’s hard to deny that I’ve enjoyed this game. A lot.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>100/100</td><td>Warcraft 3</td><td>Great gameplay, great story!</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>90/100</td><td>Prince of Persia (the original)</td><td>I still have dreams and nightmares about this game.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>90/100</td><td>Impossible Mission</td><td>The first Amiga title on this list. Spending weekends at my uncle’s place just playing these games: amazing!</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>90/100</td><td>Neverwinter Nights 1</td><td>A very good game, but it’s on this list because I had some awesome full-weekend complete co-op playthroughs that were fantastic.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>90/100</td><td>Menace</td><td>R-Type clone I absolutely loved.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>Wolfenstein 3D</td><td>Didn’t even play this game that much, if it weren’t for playing the home brew levels my friends made for each other.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>Hollow Knight</td><td>Completely addictive, somewhat challenging, and absolutely beautiful. So much fun!</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>Heroes of the Storm</td><td>Quit the game multiple times because it was too addictive, so it deserves its spot.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>GTA: San Andreas</td><td>Really got me into the sandbox genre.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>Klax</td><td>Tetris on steroids!</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>80/100</td><td>Super Mario Galaxy</td><td>The gameplay of this game was just phenomenal.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>70/100</td><td>Whacky Wheels</td><td>Yes, I enjoyed this more than Mario Kart. Bite me!</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>70/100</td><td>Tetris</td><td>Dragged me through some long trips that would’ve otherwise been quite tedious.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
-        <tr><td>70/100</td><td>Duke Nukem 3D</td><td>Hail to the king, baby! First co-op 3D shooter with amazing level design.</td><td>2019-08-10</td><td>2019-08-11</td></tr>
+      <tbody id="data">
+        <!-- generated -->
       </tbody>
     </table>
     <div class="m-3">
       <p>Total of <strong>20</strong> reviews.</p>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const data = [
+          { rating: 100, title: 'Commander Keen', description: 'Rating for all episodes, but my preference would be in this order: 3, 2, 6, 1, 5, 4. (Keen Dreams sucked big time!)', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 100, title: 'Warcraft 2', description: 'So. Many. Hours. Against the CPU. Against my dad. Against my friends. Plain fantastic game!', created: '2019-08-10', updated: '2018-06-22' },
+          { rating: 100, title: 'Golden Eye 64', description: 'Four-player-split-screen-james-bond-themed-3d-shooter. What more is there to add!?', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 100, title: 'World of Warcraft', description: 'The sheer number of hours of gaming pleasure with this title makes it a must for the top 10. Favorite expansion would be Wrath of the Lich King, mostly because that’s when most of my real life friends also played the game (I’ve played Burning Legion through Cataclysm).', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 100, title: 'Zelda: Ocarina of Time', description: 'There’s something intrinsically great about this game that requires me to place it in a top 10.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 100, title: 'Dota 2', description: 'With over 1700 hours played to date it’s hard to deny that I’ve enjoyed this game. A lot.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 100, title: 'Warcraft 3', description: 'Great gameplay, great story!', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 90, title: 'Prince of Persia (the original)', description: 'I still have dreams and nightmares about this game.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 90, title: 'Impossible Mission', description: 'The first Amiga title on this list. Spending weekends at my uncle’s place just playing these games: amazing!', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 90, title: 'Neverwinter Nights 1', description: 'A very good game, but it’s on this list because I had some awesome full-weekend complete co-op playthroughs that were fantastic.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 90, title: 'Menace', description: 'R-Type clone I absolutely loved.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'Wolfenstein 3D', description: 'Didn’t even play this game that much, if it weren’t for playing the home brew levels my friends made for each other.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'Hollow Knight', description: 'Completely addictive, somewhat challenging, and absolutely beautiful. So much fun!', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'Heroes of the Storm', description: 'Quit the game multiple times because it was too addictive, so it deserves its spot.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'GTA: San Andreas', description: 'Really got me into the sandbox genre.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'Klax', description: 'Tetris on steroids!', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 80, title: 'Super Mario Galaxy', description: 'The gameplay of this game was just phenomenal.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 70, title: 'Whacky Wheels', description: 'Yes, I enjoyed this more than Mario Kart. Bite me!', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 70, title: 'Tetris', description: 'Dragged me through some long trips that would’ve otherwise been quite tedious.', created: '2019-08-10', updated: '2019-08-11' },
+          { rating: 70, title: 'Duke Nukem 3D', description: 'Hail to the king, baby! First co-op 3D shooter with amazing level design.', created: '2019-08-10', updated: '2019-08-11' },
+        ];
+
+        const tbody = document.getElementById('data');
+
+        data.forEach(d => {
+          tbody.innerHTML += `<tr>
+            <td>${d.rating}/100</td>
+            <td>${d.title}</td>
+            <td>${d.description}</td>
+            <td>${d.created}</td>
+            <td>${d.updated}</td>
+          </tr>`;
+        });
+      });
+    </script>
   </body>
 </html>
